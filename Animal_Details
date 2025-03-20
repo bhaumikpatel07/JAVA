@@ -8,6 +8,6 @@ public class Animal_details {
     }
 
     public static void main(String[] args) {
-        Animal_details anm = new Animal_details("PIKU","Birman",10000);
+        Animal_details anm = new Animal_details("Persian","Birman",10000);
     }
 }
