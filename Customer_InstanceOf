@@ -2,7 +2,7 @@ class Customer {//parent
   
 }
 
-class Neha extends Customer {//child
+class Bhaumik extends Customer {//child
     
 }
 
@@ -12,7 +12,7 @@ public class Main {
         System.out.println("customerObj instanceof Customer: " + (customerObj instanceof Customer));
 
         Neha nehaObj = new Neha();
-        System.out.println("nehaObj instanceof Customer: " + (nehaObj instanceof Customer));
+        System.out.println("BhaumikObj instanceof Customer: " + (nehaObj instanceof Customer));
     }
 }
 
