@@ -30,7 +30,7 @@ class Employee implements EmployeeDetails {
 public class Main {
     public static void main(String[] args) {
         Employee employee = new Employee();
-        employee.setDetails("Neha", 100, 55000.00, "Bangalore", "9876543210");
+        employee.setDetails( 100,"Bhaumik", 55000.00, "Bangalore", "9876543210");
         employee.displayDetails();
     }
 }
