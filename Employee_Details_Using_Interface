@@ -1,0 +1,56 @@
+interface EmployeeDetails {
+    int getEmployeeId();
+    String getEmployeeName();
+    double getEmployeeSalary(); // New method for salary
+    String getEmployeeLocation(); // New method for location
+    String getEmployeePhoneNumber(); // New method for phone number
+}
+
+class Manager implements EmployeeDetails {
+    private int id;
+    private String name;
+    private double salary; // Added salary attribute
+    private String location; // Added location attribute
+    private String phoneNumber; // Added phone number attribute
+
+    Manager(int id, String name, double salary, String location, String phoneNumber) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.location = location;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public int getEmployeeId() {
+        return id;
+    }
+
+    public String getEmployeeName() {
+        return name;
+    }
+
+    
+
+    public double getEmployeeSalary() {
+        return salary; // Return salary
+    }
+
+    public String getEmployeeLocation() {
+        return location; // Return location
+    }
+
+    public String getEmployeePhoneNumber() {
+        return phoneNumber; // Return phone number
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        EmployeeDetails emp = new Manager(101, "Neha", 75000.00, "Patna", "123-456-7890");
+        System.out.println("ID: " + emp.getEmployeeId());
+        System.out.println("Name: " + emp.getEmployeeName());
+        System.out.println("Salary: " + emp.getEmployeeSalary());
+        System.out.println("Location: " + emp.getEmployeeLocation());
+        System.out.println("Phone Number: " + emp.getEmployeePhoneNumber());
+    }
+}

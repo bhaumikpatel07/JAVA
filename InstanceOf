@@ -1,0 +1,25 @@
+class Company {
+    // parent class
+}
+
+class Employee1 extends Company {
+    // child class
+}
+
+class Employee2 extends Company {
+    // child class
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Company companyObj = new Company();
+        System.out.println("companyObj instanceof Company: " + (companyObj instanceof Company));
+
+        Employee1 Employee1Obj = new Employee1();
+        System.out.println("employee1Obj instanceof Company: " + (Employee1Obj instanceof Company));
+
+        Employee2 Employee2Obj = new Employee2();
+        System.out.println("employee2Obj instanceof Company: " + (Employee2Obj instanceof Company));
+    }
+}
+

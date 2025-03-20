@@ -1,0 +1,88 @@
+[28/01, 13:30] Aanya: def sum_of_digits(number):
+    return sum(int(digit) for digit in str(number))
+
+def custom_binary_search(N, d):
+    low, high = 1, N
+    while low <= high:
+        mid = (low + high) // 2
+        if abs(mid - sum_of_digits(mid)) <= d:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return N - high
+
+N = 13
+d = 2
+result = custom_binary_search(N, d)
+print("Result:", result)
+[28/01, 14:18] Aanya: public class Main {
+    static void method1(){
+        System.out.println("this is static method ");
+    }
+    void method2(){
+        System.out.println("this is not static ");
+    }
+    void method3(){
+        System.out.println("this is non static method");
+    }
+   static int add(int a,int b){
+        return a+b;
+    }
+    public static void main(String[] args) {
+     method1();
+     Main obj = new Main();
+     obj.method2();
+     obj.method3();
+     System.out.println(add(10,20));
+  
+    
+}
+}
+[29/01, 21:34] Aanya: def process_number(num):
+    if num == 0:
+        return "Num should not be equal to 0."
+
+    # Convert the number to a string to inspect last digit and count zeros
+    num_str = str(num)
+    last_digit = num_str[-1]
+    
+    if last_digit == '1':
+        result = "Store is: 1"
+    else:
+        # Count the number of '0's in the number
+        zero_count = num_str.count('0')
+        result = f"Number of zeros: {zero_count}"
+    
+    return result
+
+# Example usage
+num = 1010
+print(process_number(num))
+[30/01, 09:18] Aanya: import java.util.Scanner;
+
+public class StudentDetails {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Reading student details
+        System.out.println("Enter Student ID:");
+        int studentId = scanner.nextInt();
+        scanner.nextLine(); // Consume newline
+
+        System.out.println("Enter Student Name:");
+        String studentName = scanner.nextLine();
+
+        System.out.println("Enter Department:");
+        String department = scanner.nextLine();
+
+        System.out.println("Enter Section:");
+        String section = scanner.nextLine();
+
+        // Displaying the student details
+        System.out.println("Student Details:");
+        System.out.println("Student ID: " + studentId);
+        System.out.println("Name: " + studentName);
+        System.out.println("Department: " + department);
+        System.out.println("Section: " + section);
+    }
+}

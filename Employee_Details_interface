@@ -1,0 +1,37 @@
+
+interface EmployeeDetails {
+    void setDetails(String name, int id, double salary, String location, String phoneNumber);
+    void displayDetails();
+}
+class Employee implements EmployeeDetails {
+    private String name;
+    private int id;
+    private double salary;
+    private String location;
+    private String phoneNumber;
+    @Override
+    public void setDetails(String name, int id, double salary, String location, String phoneNumber) {
+        this.name = name;
+        this.id = id;
+        this.salary = salary;
+        this.location = location;
+        this.phoneNumber = phoneNumber;
+    }
+    @Override
+    public void displayDetails() {
+        System.out.println("Employee ID: " + id);
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Salary: " + salary);
+        System.out.println("Employee Location: " + location);
+        System.out.println("Employee Phone Number: " + phoneNumber);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee employee = new Employee();
+        employee.setDetails("Neha", 100, 55000.00, "Bangalore", "9876543210");
+        employee.displayDetails();
+    }
+}
+E

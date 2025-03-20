@@ -1,0 +1,27 @@
+interface Animal{
+    abstract void sound();
+    
+}
+class Horse implements Animal{
+    public void sound(){
+        System.out.println("Woof Woof");
+    }
+    
+}
+class Tiger implements Animal{
+    public void sound(){
+        System.out.println("Gur Gurrr");
+    }
+}
+public class Interface
+{
+	public static void main(String[] args) {
+		Horse h = new Horse();
+		h.sound();
+	
+		Tiger t = new Tiger();
+		t.sound();
+		
+		
+	}
+}
