@@ -24,7 +24,7 @@ abstract class Softwares { // Abstract class
 
 class Instagram extends Softwares { // Child class
     void app_open() {
-        if(user_name.equals("Neha") && password.equals("123@")) {
+        if(user_name.equals("Bhaumik") && password.equals("12345$")) {
             System.out.println("Successfully Login, App is open");
         } else {
             System.out.println("Invalid username and password");
