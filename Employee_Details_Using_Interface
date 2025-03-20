@@ -46,7 +46,7 @@ class Manager implements EmployeeDetails {
 
 public class Main {
     public static void main(String[] args) {
-        EmployeeDetails emp = new Manager(101, "Neha", 75000.00, "Patna", "123-456-7890");
+        EmployeeDetails emp = new Manager(101, "Bhaumik", 100000.00, "Rajkot", "123-456-7890");
         System.out.println("ID: " + emp.getEmployeeId());
         System.out.println("Name: " + emp.getEmployeeName());
         System.out.println("Salary: " + emp.getEmployeeSalary());
